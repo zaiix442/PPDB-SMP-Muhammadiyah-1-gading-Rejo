@@ -1,0 +1,199 @@
+DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendaftaran Online SMP Muhammadiyah 1 Gading Rejo</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <i class="fas fa-school"></i>
+                    <span>SMP MUTU GADINGREJO</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link">Beranda</a></li>
+                    <li><a href="#about" class="nav-link">Tentang</a></li>
+                    <li><a href="#register" class="nav-link">Daftar</a></li>
+                    <li><a href="#contact" class="nav-link">Kontak</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Pendaftaran Siswa Baru <br> <span class="highlight">SMP Muhammadiyah 1</span> Gading Rejo</h1>
+            <p>Tahun Ajaran 2026/2027</p>
+            <div class="hero-buttons">
+                <a href="#register" class="btn-primary">Daftar Sekarang</a>
+                <a href="#about" class="btn-secondary">Info Lengkap</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Sekolah">
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">Tentang SMP Muhammadiyah 1 Gading Rejo</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Sekolah Unggul Berbasis Islam</h3>
+                    <p>SMP Muhammadiyah 1 Gading Rejo adalah sekolah menengah pertama yang berkomitmen mencetak generasi muda berprestasi, berakhlak mulia, dan beriman. Dengan kurikulum nasional plus program tahfidz dan karakter Muhammadiyah.</p>
+                    <div class="features">
+                        <div class="feature">
+                            <i class="fas fa-book"></i>
+                            <span>Kurikulum Merdeka</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-mosque"></i>
+                            <span>Tahfidz Al-Qur'an</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-trophy"></i>
+                            <span>Prestasi Akademik</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Gedung Sekolah">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Section -->
+    <section id="register" class="register">
+        <div class="container">
+            <h2 class="section-title">Formulir Pendaftaran</h2>
+            <p class="section-subtitle">Isi data dengan lengkap dan benar</p>
+            
+            <form action="https://formspree.io/f/xqenpggl" method="POST" id="registrationForm" class="registration-form">
+                
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="nama">Nama Lengkap *</label>
+                        <input type="text" id="nama" name="nama" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="nisn">NISN *</label>
+                        <input type="text" id="nisn" name="nisn" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="tempatLahir">Tempat Lahir *</label>
+                        <input type="text" id="tempatLahir" name="tempatLahir" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="tanggalLahir">Tanggal Lahir *</label>
+                        <input type="date" id="tanggalLahir" name="tanggalLahir" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="jenisKelamin">Jenis Kelamin *</label>
+                        <select id="jenisKelamin" name="jenisKelamin" required>
+                            <option value="">Pilih...</option>
+                            <option value="Laki-laki">Laki-laki</option>
+                            <option value="Perempuan">Perempuan</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="alamat">Alamat Lengkap *</label>
+                        <textarea id="alamat" name="alamat" rows="3" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="noTelp">No. Telepon/WhatsApp *</label>
+                        <input type="tel" id="noTelp" name="noTelp" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email (Opsional)</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="asalSD">Asal SD *</label>
+                        <input type="text" id="asalSD" name="asalSD" required>
+                    </div>
+                    <div class="form-group full-width">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="syarat" name="syarat" required>
+                            <span>Saya menyatakan bahwa data yang saya isi adalah benar dan setuju dengan <a href="#" style="color: #4CAF50;">syarat & ketentuan</a></span>
+                        </label>
+                    </div>
+                </div>
+                <button type="submit" class="btn-submit">
+                    <i class="fas fa-paper-plane"></i>
+                    Kirim Pendaftaran
+                </button>
+                
+        </div
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">informasi kontak</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Alamat</h4>
+                            <p>Jl.Raya Gadingrejo, Kec. Gading Rejo, Kab. Pringsewu</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Telepon</h4>
+                            <p>(031) 1234567</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-whatsapp"></i>
+                        <div>
+                            <h4>WhatsApp</h4>
+                            <p>0881-0243-39578</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.207923953234!2d112.699999!3d-7.449999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zN8KwMjYnNTkuMSJTIDEywrA0MicyNTguNSJF!5e0!3m2!1sid!2sid!4v1690000000000" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 SMP Muhammadiyah 1 Gading Rejo. All rights reserved.</p>
+        </div>
+    </footer>
+<!-- Success Modal -->
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <i class="fas fa-check-circle success-icon"></i>
+            <h3>Pendaftaran Berhasil!</h3>
+            <p>Terima kasih ${nama}, pendaftaran Anda telah kami terima. Kami akan menghubungi Anda melalui WhatsApp dalam 24 jam.</p>
+            <p><strong>No. Pendaftaran: </strong><span id="noPendaftaran"></span></p>
+            <button onclick="closeModal()" class="btn-primary">Tutup</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+  </html>
+<!-- update -->
